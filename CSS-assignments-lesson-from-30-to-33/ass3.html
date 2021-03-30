@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass3</title>
+</head>
+<style>
+    .list{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+ 
+    .list ul{
+        list-style-position: outside;
+        list-style: none;
+        padding: 10px;
+    }
+    .list ul, li,
+    .list .js li{
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        background-color: #EEE;
+    }
+    .list .js{
+        list-style: inside;
+        list-style-type: circle;
+    }
+    .list .js li,
+    .list ol li{
+        margin-bottom: 5px;
+        background-color: #FFF;
+        padding: 5px;
+    }
+   
+</style>
+<body>
+    <div class="list">
+    <ul>
+        <li>
+          HTML
+          <ol type="1" start="10">
+            <li>Slim</li>
+            <li>Pugjs</li>
+            <li>HAML</li>
+          </ol>
+        </li>
+        <li>
+          CSS
+          <ol type="I" start="10">
+            <li>SASS</li>
+            <li>LESS</li>
+            <li>PostCSS</li>
+          </ol>
+        </li>
+        <li>
+          JavaScript
+          <ul class="js">
+            <li>Vuejs</li>
+            <li>Sveltejs</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</body>
+</html>
