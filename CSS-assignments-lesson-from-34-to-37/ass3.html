@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass3</title>
+</head>
+<style>
+    p{
+        width:30% ;
+        height: 30px;
+        margin:auto;
+        background-color:#eeeeee;
+        text-align:center;
+        padding:20px;
+        margin-bottom:10px;
+        position:relative;
+        border-left: 5px solid #e91e63;
+      }
+      
+      p::before{
+        content:"";
+        position: absolute;
+        left: -28px;
+        height: 0;
+        width:0;
+        padding:0;
+        top:30%;
+        margin-bottom:25px;
+        border:12px;
+        border-style:solid;
+        border-color:transparent #e91e63 transparent transparent;
+      }
+      p::after{
+        position: absolute;
+        content: attr(data-person);
+        left: -114px;
+        background-color: #eeeeee;
+        text-align: center;
+        padding: 8px;
+        height: 44px;
+        bottom: 5px;
+        width: 63px;
+        
+      }
+  
+
+</style>
+<body>
+    <p data-person="Osama">This Is Very Very Long Comment Number One</p>
+    <p data-person="Ahmed">This Is Very Very Long Comment Number Two</p>
+    <p data-person="Sayed">This Is Very Very Long Comment Number Three</p>
+</body>
+</html>

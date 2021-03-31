@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass4</title>
+</head>
+<style>
+    p{
+        margin-bottom: 20px;
+        counter-increment: counter;
+        background-color: #eee;
+        margin:15px auto;
+        width:50%;
+        padding:20px;
+        text-align:center;
+        font-size:20px;
+        position:relative;
+        
+     
+      }
+      p::before{
+        content:counter(counter);
+        background-color:#f44336;
+        padding:20px;
+        color:#fff;
+        position:absolute;
+        left:0;
+        top:0px
+      }
+      p::after{
+      content:"";
+      background-color:#f44336;
+        width:10px;
+        
+        height:100%;
+        color:#fff;
+        position:absolute;
+        right:0;
+        top:0px
+      }
+
+</style>
+<body>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+</body>
+</html>
