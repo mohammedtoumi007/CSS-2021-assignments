@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass2</title>
+</head>
+<style>
+    * {
+        box-sizing:border-box
+    }
+.input1{
+  width:600px;
+  margin:20px auto; 
+  position:relative;
+}
+input{
+  outline:none;
+  padding:5px;
+  width:100%;
+  margin:3px auto;
+  background-color: #ddd;
+  caret-color:red;
+  bottom: 0;
+  border:none;
+  
+}
+.input1::after{
+    content: "";
+    left: 0px;
+    width:100%;
+    bottom: 1px;
+    height: 2px;
+    position: absolute;
+  background-image: linear-gradient(to right,#f44336 50% ,#4caf50 50%);
+}
+</style>
+<body>
+    <div class="input1">
+        <input type="text" placeholder="One">
+    </div>
+    <div class="input1">
+        <input type="text" placeholder="Two">
+    </div>
+    <div class="input1">
+        <input type="text" placeholder="Three">
+    </div>
+    
+    
+</body>
+</html>
