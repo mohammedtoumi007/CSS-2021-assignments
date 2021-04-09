@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass5</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+    .grid {
+        background-color: #ddd;
+        padding: 20px;
+        width: 800px;
+        height: 400px;
+        margin: 20px auto;
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(2, 1fr);
+        align-content: space-between;
+        gap: 10px 10px;
+
+      }
+      .grid div{
+        background-color: #E91E63;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        font-size: 20px;
+        font-family: Tahoma;
+       
+    }
+</style>
+<body>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+    
+</body>
+</html>

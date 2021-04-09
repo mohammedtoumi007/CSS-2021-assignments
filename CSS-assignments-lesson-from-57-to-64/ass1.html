@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass1</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    .grid {
+        background-color: #ddd;
+        padding: 20px;
+        width: 800px;
+        height: 400px;
+        margin: 20px auto;
+        display: grid;
+        grid-template: 50px / repeat(3, 3fr);
+        gap : 20px 20px;
+      }
+      .grid div{
+          content: "";
+          background-color: #607D8B;
+          color: white;
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          font-family: Tahoma;
+      }
+      .grid .one::before{content: "Element 1";}
+      .grid .two::before{content: "Element 2";}
+      .grid .three::before{content: "Element 3";}
+      .grid .four::before{content: "Element 4";}
+      .grid .five::before{content: "Element 5";}
+      .grid .six::before{content: "Element 6";}
+      
+      
+</style>
+<body>
+    <div class="grid">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+      </div>
+    
+</body>
+</html>

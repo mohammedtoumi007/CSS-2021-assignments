@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass2</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+    .layout{
+        background-color: #EEE;
+        height: 100vh;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 50px auto 50px;
+        grid-template-areas: "head head head head head head head head head head"
+                             "cont cont cont cont cont cont cont aside aside aside"
+                             "foot foot foot foot foot foot foot foot foot foot";
+    }
+  
+    header::before{
+        content: "Header";
+        color: #FFF; 
+        margin-left: 10px; 
+        line-height: 3; 
+        font-family: Tahoma;
+        font-size: 15px; 
+    }
+    section::before{
+        content: "Section";
+        color: #FFF; 
+        margin-left: 10px; 
+        line-height: 3; 
+        font-family: Tahoma; 
+        font-size: 15px; 
+    }
+    aside::before{
+        content: "Aside";
+        color: #FFF; 
+        margin-left: 10px; 
+        line-height: 3;  
+        font-family: Tahoma;
+        font-size: 15px; 
+    }
+    footer::before{
+        content: "Footer";
+        color: #FFF; 
+        margin-left: 10px; 
+        line-height: 3; 
+        font-family: Tahoma; 
+        font-size: 15px; 
+    }
+
+    header{
+        grid-area: head;
+        background-color: #03a9f4;
+    }
+    section{
+        grid-area: cont;
+        background-color: #ff5722; 
+    }
+    aside{
+        grid-area: aside;
+        background-color: #607d8b; 
+    }
+    footer{
+        grid-area: foot;
+        background-color: rgba(9, 143, 103, 0.938);
+    }
+</style>
+<body>
+    <div class="layout">
+        <header></header>
+        <section></section>
+        <aside></aside>
+        <footer></footer>
+      </div>
+    
+</body>
+</html>

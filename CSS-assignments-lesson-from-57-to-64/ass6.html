@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass6</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 10px;
+        padding: 10px;
+    }
+    .grid div h4{
+        padding: 10px;
+        font-weight: 700;
+    }
+    
+    .grid div h6{
+        padding: 0 10px;
+        color: #CCC;
+    }
+    .grid{
+        background-color: #EEE;
+        margin: 20px auto;
+        width: 100%;
+        display: grid;
+        padding: 20px;
+        font-family: sans-serif;
+        gap: 10px 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr) auto;
+        grid-template-areas: "osema osema osema osema osema osema osema osema ahmed ahmed shady shady "
+                             "mohammed mohammed mahmoud mahmoud mahmoud mahmoud mahmoud mahmoud mahmoud mahmoud mahmoud mahmoud"
+                             "ezzeldin ezzeldin ezzeldin ezzeldin ezzeldin ezzeldin ezzeldin ezzeldin ezzeldin ezzeldin ezzeldin ezzeldin"
+                             "mohamedS mohamedS mohamedS ibrahim ibrahim ibrahim gamal gamal gamal eman eman eman ";
+
+    }
+    .grid div{
+        padding: 0 20px;
+        border-bottom: 2px solid #FF3D00;
+        position: relative;
+    }
+    .grid div::after{
+        content: '"';
+        color: #B3B3B3;
+        position: absolute;
+        font-weight: bold;
+        font-size: 50px;
+        bottom: -30px;
+        font-weight: 600px;
+        right: 5px;
+        transform:rotate(15deg);
+    }
+    .osema{
+        grid-area: osema;
+        background-color: #FFF;
+        grid-column: 1 / span 6;
+    }
+    .ahmed{
+        grid-area: ahmed;
+        background-color: #FFF;
+        grid-column: 7 / span 3;
+    }
+    .shady{
+        grid-area: shady;
+        grid-column: 10 / span 3;
+        grid-row: 1 / span 3;
+        background-color: black;
+        color: #FFF;
+       
+    }
+    .mohamed{
+        grid-area: mohammed;
+        background-color: #FFF;
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 2;
+    }
+    .mahmoud{
+        grid-area: mahmoud;
+        background-color: black;
+        color: #FFF;
+        grid-column: 4 / span 6;  
+    }
+    .ezzeldin{
+        grid-area: ezzeldin;
+        background-color: #FFF;
+        grid-column: 4 / span 6;
+    }
+    .med-sayed{
+        grid-area: mohamedS;
+        background-color: #FFF;
+    }
+    .ibrahim{
+        grid-area: ibrahim;
+        background-color: black;
+        color: #FFF;
+    }
+    .gamal{
+        grid-area: gamal;
+        background-color: #FFF;
+    }
+    .eman{
+        grid-area: eman;
+        background-color: #FFF;
+    }
+
+
+
+</style>
+<body>
+    <div class="grid">
+        <div class="osema">
+            <h4>Osema Mohammed</h4>
+            <h6>Full-Stack Developer</h6>
+            <p style="font-weight: bold;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolor, ex eaque labore nesciunt fugit cum neque, natus blanditiis nostrum ut! Magni inventore ea et ipsum porro. Rerum, ipsam soluta!</p>
+            <p style="font-weight: lighter;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestiae ipsam ea ipsum non provident dicta vitae aperiam natus, sint nihil similique repudiandae eos laudantium doloremque, consequuntur a maxime ut?</p>
+        </div>
+
+        <div class="ahmed">
+            <h4>Ahmed Sayed</h4>
+            <h6>IOS Developer</h6>
+            <p style="font-weight: bold;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolor, ex eaque labore nesciunt fugit cum neque, natus blanditiis nostrum ut! Magni inventore ea et ipsum porro. Rerum, ipsam soluta!</p>
+            <p style="font-weight: lighter;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestiae ipsam ea ipsum non provident dicta vitae aperiam natus, sint nihil similique repudiandae eos laudantium doloremque, consequuntur a maxime ut?</p>
+        </div>
+        <div class="shady">
+            <h4>Shady Nabil</h4>
+            <h6>Full-Stack Developer</h6>
+            <p style="font-weight: bold;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolor, ex eaque labore nesciunt fugit cum neque, natus blanditiis nostrum ut! Magni inventore ea et ipsum porro. Rerum, ipsam soluta!</p>
+            <p style="font-weight: lighter;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestiae ipsam ea ipsum non provident dicta vitae aperiam natus, sint nihil similique repudiandae eos laudantium doloremque, consequuntur a maxime ut?</p>
+        </div>
+        <div class="mohamed">
+            <h4>Mohammed Ibrahim</h4>
+            <h6>.Net Developer</h6>
+            <p style="font-weight: bold;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolor, ex eaque labore nesciunt fugit cum neque, natus blanditiis nostrum ut! Magni inventore ea et ipsum porro. Rerum, ipsam soluta!</p>
+            <p style="font-weight: lighter;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestiae ipsam ea ipsum non provident dicta vitae aperiam natus, sint nihil similique repudiandae eos laudantium doloremque, consequuntur a maxime ut?</p>
+        </div>
+        <div class="mahmoud">
+            <h4>Mahmoud Mohammed</h4>
+            <h6>Full-Stack Developer</h6>
+            <p style="font-weight: bold;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolor, ex eaque labore nesciunt fugit cum neque, natus blanditiis nostrum ut! Magni inventore ea et ipsum porro. Rerum, ipsam soluta!</p>
+            <p style="font-weight: lighter;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestiae ipsam ea ipsum non provident dicta vitae aperiam natus, sint nihil similique repudiandae eos laudantium doloremque, consequuntur a maxime ut?</p>
+        </div>
+        <div class="ezzeldin">
+            <h4>Ezz Eldine</h4>
+            <h6>Front-end Developer</h6>
+            <p style="font-weight: bold;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolor, ex eaque labore nesciunt fugit cum neque, natus blanditiis nostrum ut! Magni inventore ea et ipsum porro. Rerum, ipsam soluta!</p>
+            <p style="font-weight: lighter;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestiae ipsam ea ipsum non provident dicta vitae aperiam natus, sint nihil similique repudiandae eos laudantium doloremque, consequuntur a maxime ut?</p>
+        </div>
+        <div class="med-sayed">
+            <h4>Mohammed Sayed</h4>
+            <h6>IOS Developer</h6>
+            <p style="font-weight: bold;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolor, ex eaque labore nesciunt fugit cum neque, natus blanditiis nostrum ut! Magni inventore ea et ipsum porro. Rerum, ipsam soluta!</p>
+            <p style="font-weight: lighter;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestiae ipsam ea ipsum non provident dicta vitae aperiam natus, sint nihil similique repudiandae eos laudantium doloremque, consequuntur a maxime ut?</p>
+        </div>
+        <div class="ibrahim">
+            <h4>Ibrahim Sayed</h4>
+            <h6>IOS Developer</h6>
+            <p style="font-weight: bold;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolor, ex eaque labore nesciunt fugit cum neque, natus blanditiis nostrum ut! Magni inventore ea et ipsum porro. Rerum, ipsam soluta!</p>
+            <p style="font-weight: lighter;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestiae ipsam ea ipsum non provident dicta vitae aperiam natus, sint nihil similique repudiandae eos laudantium doloremque, consequuntur a maxime ut?</p>
+        </div>
+        <div class="gamal">
+            <h4>Gamal Sayed</h4>
+            <h6>IOS Developer</h6>
+            <p style="font-weight: bold;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolor, ex eaque labore nesciunt fugit cum neque, natus blanditiis nostrum ut! Magni inventore ea et ipsum porro. Rerum, ipsam soluta!</p>
+            <p style="font-weight: lighter;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestiae ipsam ea ipsum non provident dicta vitae aperiam natus, sint nihil similique repudiandae eos laudantium doloremque, consequuntur a maxime ut?</p>
+        </div>
+        <div class="eman">
+            <h4>Eman Sayed</h4>
+            <h6>IOS Developer</h6>
+            <p style="font-weight: bold;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolor, ex eaque labore nesciunt fugit cum neque, natus blanditiis nostrum ut! Magni inventore ea et ipsum porro. Rerum, ipsam soluta!</p>
+            <p style="font-weight: lighter;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt molestiae ipsam ea ipsum non provident dicta vitae aperiam natus, sint nihil similique repudiandae eos laudantium doloremque, consequuntur a maxime ut?</p>
+        </div>
+    </div>
+    
+</body>
+</html>
