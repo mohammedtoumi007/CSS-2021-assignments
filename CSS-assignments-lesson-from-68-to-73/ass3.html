@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass3</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    div{
+        background-color: #607D8B;
+        border-bottom: 5px solid #000;
+        color: white;
+        margin: 120px auto 30px ;
+        padding: 10px 10px;
+        width: 200px;
+        height: 200px;
+        position: relative;
+       
+    }
+    
+    div::before{
+        content: "";
+        position: absolute;
+        background-color: #000;
+        left: 14.3%;
+        top: -35.6%;
+        width: 69%;
+        height: 69%;
+        border-right: 5px solid #eee;
+        border-bottom: 5px solid #eee;
+        transform-origin: center center;
+        transform: rotate(44.3deg);    
+        z-index: 1;
+       
+    }
+    
+    div::after{
+        content: "Elzero";
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+</style>
+<body>
+    <div></div>
+</body>
+</html>
