@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass3</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    div{
+        width: 50px;
+        height: 50px;
+        background-color: #DDD;
+        margin: 50px auto;
+        display: flex;
+        position: relative;
+        border-radius: 50%;
+        border: 5px solid black;
+        border-lefT-color: transparent;
+        animation-name: ass3;
+        animation-duration: 1s;
+        animation-direction: reverse ;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+   
+    @keyframes ass3 {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(1turn);
+        }
+        
+    }
+
+</style>
+<body>
+    <div></div>
+</body>
+</html>
