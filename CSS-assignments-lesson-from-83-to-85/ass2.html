@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+   *{
+       box-sizing: border-box;
+       margin: 0;
+       font-family: "system-ui";
+   }
+   /* Assignment-One */
+
+  .standerd{
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  .standerd > div{
+      width: 100%;
+      background-color: #EEE;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 2px solid #DDD;
+  }
+  @media (max-width:991px) {
+      .container-one{
+          margin: 20px 20px;
+      }
+  }
+  @media (min-width:992px){
+      .container-one > div{
+          width: calc(50% -20px)
+      }
+      .container-one > div > h3{
+          color: red
+      }
+  }
+  @media (min-width: 1200px) {
+      .container-one > div{
+          width: calc(25% -20px);
+      }
+      .container-one > div > h3{
+          color: #109C8F;
+      }
+  }
+
+  /* Assignment-Two */
+  @media (max-width:991px){
+    .container-tow > div{
+        margin: 20px 20px;
+    }
+}
+
+@media (min-width:992px){
+    .container-tow > div{
+        width: calc((100% / 3) - 14px);
+    }
+    .container-tow > div:first-child{
+        width: calc(100% - 20px);
+    }
+    .container-tow > div > h3{
+        color: red;
+    }
+}
+
+@media (min-width:1200px){
+    .container-tow > div{
+        width: calc(50% - 14px);
+    }
+    .container-tow > div:first-child , .container-tow > div:last-child{
+        width: calc(100% - 20px);
+    }
+    .container-tow > div > h3{
+        color: #109C8F;
+    }
+}
+  
+</style>
+<body>
+    <section class="container-one standerd">
+        <div>
+            <h3> Product One </h3>
+            <p> This is product </p>
+        </div>
+        <div>
+            <h3> Product tow </h3>
+            <p> This is product </p>
+        </div>
+        <div>
+            <h3> Product three </h3>
+            <p> This is product </p>
+        </div>
+        <div>
+            <h3> Product four </h3>
+            <p> This is product </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="container-tow standerd">
+        <div>
+            <h3> Product One </h3>
+            <p> This is product </p>
+        </div>
+        <div>
+            <h3> Product tow </h3>
+            <p> This is product </p>
+        </div>
+        <div>
+            <h3> Product three </h3>
+            <p> This is product </p>
+        </div>
+        <div>
+            <h3> Product four </h3>
+            <p> This is product </p>
+        </div>
+
+    </section>
+
+</body>
+</html>
