@@ -4,43 +4,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ass2</title>
 </head>
-<style>   
+<style>
     .arrow {
-        width: 40%;
-        padding: 20px;
-        background-color: #EEE;
-        font-size: 2rem;
-        margin: 50px;
+        background-color: #DDD;
+        margin: 50px auto;
+        padding: 30px;
+        width: 400px;
+        display: block;
         position: relative;
     }
-    .top {
-        content: "";
+    .top::before {
+        content: '';
+        border-width: 15px;
+        border-style: solid;
+        border-color: transparent transparent #DDD transparent;
         position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: red;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -100%);
     }
-    .right {
-        content: "";
+    .right::before {
+        content: '';
+        border-width: 15px;
+        border-style: solid;
+        border-color: transparent transparent transparent #DDD;
         position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: red;
-    } 
-    .bottom {
-        content: "";
+        top: 50%;
+        right: 0;
+        transform: translate(100%, -50%);
+    }
+    .bottom::before {
+        content: '';
+        border-width: 15px;
+        border-style: solid;
+        border-color: #DDD transparent transparent transparent;
         position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: red;
-    } 
-    .left {
-        content: "";
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+    }
+    .left::before {
+        content: '';
+        border-width: 15px;
+        border-style: solid;
+        border-color: transparent #DDD transparent transparent;
         position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: red;
-    }  
+        top: 50%;
+        left: 0;
+        transform: translate(-100%, -50%);
+    }
 </style>
 <body>
     <div class="arrow top">Elzero</div>
